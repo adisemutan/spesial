@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>For Alya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"><i></i></div>
+
+<section class="screen cover">
+  <div class="sparkle">✦</div>
+  <p class="mini">a little something</p>
+  <h1>HAPPY<br><em>GIRLFRIEND DAY</em></h1>
+  <div class="name">Alya Nur Amiroh</div>
+  <p class="small-date">01 / 10 / 2026</p>
+  <button class="round-btn" onclick="next('message')">↓</button>
+  <p class="tap">tap to continue</p>
+</section>
+
+<section class="screen message" id="message">
+  <p class="mini">before you continue</p>
+  <h2>Ada sesuatu<br>yang mau aku bilang.</h2>
+  <button class="message-card" onclick="openMessage(this)">
+    <span class="lock">♡</span>
+    <span><b>Buka pesan</b><small>tap here</small></span>
+    <strong>→</strong>
+  </button>
+
+  <div class="hidden-letter" id="letter">
+    <p>Alya,</p>
+    <p>sebenarnya aku juga nggak tahu harus mulai dari mana buat nulis ini. Aku bukan orang yang terlalu jago menyampaikan sesuatu lewat kata-kata, apalagi kalau harus ngomong langsung. Jadi daripada nanti malah bingung sendiri, akhirnya aku bikin ini.</p>
+    <p><b>Walaupun kamu sering slowresponin aku, tapi aku tetap seneng ngobrol sama kamu.</b> Kadang aku udah nungguin balasan, terus pas dibales ternyata udah lama banget wkwk. Ngeselin sih, tapi anehnya aku masih aja betah ngajak ngobrol.</p>
+    <p>Kadang obrolan kita juga nggak penting-penting amat. Bisa bahas hal random, bercanda nggak jelas, atau cuma saling ganggu. Tapi justru hal-hal kecil kayak gitu yang menurutku bikin semuanya jadi seru.</p>
+    <p>Aku seneng bisa kenal kamu. Bukan karena harus ada alasan yang besar atau sesuatu yang harus dijelasin panjang-panjang. Aku cuma merasa kamu termasuk orang yang menyenangkan untuk dikenal dan diajak ngobrol.</p>
+    <p>Aku juga nggak bikin ini supaya kamu harus membalas sesuatu. Nggak ada tuntutan apa-apa. Anggap aja ini sebagai sesuatu kecil yang sengaja aku bikin karena... <b>ya pengen aja.</b> Wkwk.</p>
+    <p>Mungkin nanti kamu bakal ketawa lihat website ini, atau malah bilang aku niat banget cuma gara-gara bikin beginian. Gapapa. Yang penting aku sudah sempat bikin sesuatu yang mungkin bisa bikin kamu senyum walaupun cuma sebentar.</p>
+    <p>Jadi, kalau selama ini aku kadang suka gangguin kamu, tiba-tiba ngajak ngobrol, atau bikin kamu bingung sendiri...</p>
+    <p><b>ya maaf, tapi kayaknya aku bakal tetap begitu. 😭</b></p>
+    <p class="last">Udah deh. Segitu dulu. Jangan geer ya, Alya. Aku cuma mau bilang kalau aku seneng bisa kenal kamu. ♡</p>
+  </div>
+
+  <button class="continue" id="continueBtn" onclick="next('after')">udah baca? lanjut →</button>
+</section>
+
+<section class="screen after" id="after">
+  <div class="circle">02</div>
+  <p class="mini">okay, one more thing</p>
+  <h2>Kalau sudah sampai sini,<br>berarti kamu baca semuanya.</h2>
+  <p class="desc">Tenang, belum selesai. Bagian foto kita masukin nanti. Untuk sekarang aku simpan tempatnya dulu.</p>
+  <div class="fake-gallery">
+    <div class="fake-photo"><span>your photo</span></div>
+    <div class="dots">● ○ ○</div>
+  </div>
+  <button class="continue" onclick="next('ending')">lanjut →</button>
+</section>
+
+<section class="screen ending" id="ending">
+  <p class="mini">that's all for now</p>
+  <div class="end-heart">♡</div>
+  <h2>Udah, jangan<br>geer dulu. 😭</h2>
+  <p>Foto-fotonya nanti kita tambahin di sini.<br>Yang penting kamu sudah sampai akhir.</p>
+  <div class="end-name">— buat Alya</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
